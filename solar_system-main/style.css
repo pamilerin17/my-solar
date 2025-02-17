@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./images/starry-night-sky.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: #000; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sun{
+    width: 15rem;
+    height: 15rem;
+    background: url(./images/sun.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    animation: 15s rotate linear infinite;
+    /* box-shadow: 0 0 3rem gold; */
+}
+
+.mercury_circle{
+    border: .1rem solid #444;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+}
+.mercury{
+    width: 2.3rem;
+    height: 2.3rem;
+    background: url(./images/mercury.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -8.7rem;
+    animation: 5s rotate linear infinite;
+    transform-origin: 1.5rem 8.5rem;
+}
+
+.venus_circle{
+    border: .1rem solid #444;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+}
+.venus{
+    width: 3.3drem;
+    height: 3.3rem;
+    background: url(./images/venus.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -12.5rem;
+    animation: 9s rotate linear infinite;
+    transform-origin: 2rem 12.5rem;
+}
+
+.earth_circle{
+    border: .1rem solid #444;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+}
+.earth{
+    width: 5rem;
+    height: 5rem;
+    background: url(./images/earth.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -20rem;
+    animation: 12s rotate linear infinite;
+    transform-origin: 2.5rem 20rem;
+}
+
+.moon_circle{
+    border: .1rem solid #444;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    left: -1.4rem;
+    top: -1.3rem;
+}
+.moon{
+    width: 2rem;
+    height: 2rem;
+    background: url(./images/moon.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -2rem;
+    animation: 4s rotate linear infinite;
+    /* transform-origin: .4rem 5rem; */
+    z-index: 10000;
+}
+
+.mars_circle{
+    border: .1rem solid #444;
+    width: 47rem;
+    height: 47rem;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+}
+.mars{
+    width: 2.8rem;
+    height: 2.8rem;
+    background: url(./images/mars.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -25rem;
+    animation: 16s rotate linear infinite;
+    transform-origin: 2rem 24.6rem;
+}
+
+.jupiter_circle{
+    border: .1rem solid #444;
+    /* width: 63rem; */
+    /* height: 63rem; */
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+}
+.jupiter{
+    /* width: 12rem;
+    height: 12rem; */
+    width: 113px;
+    height: 113px;
+    background: url(./images/jupiter.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    /* top: -38rem; */
+    top: -350px;
+    animation: 22s rotate linear infinite;
+    transform-origin: 50px 350px;
+}
+
+.saturn_circle{
+    border: .1rem solid #444;
+
+    width: 730px;
+    height: 730px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+}
+.saturn{
+    /* width: 12rem;
+    height: 12rem; */
+    width: 100px;
+    height: 100px;
+    background: url(./images/saturn2-removebg-preview.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    /* top: -38rem; */
+    top: -400px;
+    animation: 27s rotate linear infinite;
+    transform-origin: 55px 406px;
+}
+p{
+    position: inherit;
+    color: #fff;
+    left: 30px;
+    bottom: 0%;
+    font-size: 1.3rem;
+}
+
+.uranus_circle{
+    border: .2rem solid #444;
+
+    width: 840px;
+    height: 830px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+}
+.uranus{
+   
+    width: 73px;
+    height: 73px;
+    background: url(./images/uranus.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -450px;
+    animation: 30s rotate linear infinite;
+    transform-origin: 65px 455px;
+}
+
+
+
+@keyframes rotate {
+    to{
+        transform: rotate(360deg);
+    }
+}
